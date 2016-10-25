@@ -29,7 +29,7 @@ d3 = forceNetwork(Links = relations, Nodes = vertices,
                   zoom = T)
 
 # If you want to show the graph
-#show(d3)
+show(d3)
 
 #If you want to save the graph as html file
 saveNetwork(d3,file = '#87_Interactive_network.html',selfcontained = F)
