@@ -10,3 +10,20 @@ hist(hmresp$Mental_State,
      xlab="Mental State Rating out of 10", 
      border="black", 
      col="blue")
+#THE PROBABILITY WEIGHTING FUNCTION FROM PRELEC, 1998
+#https://goo.gl/jvcN0M
+
+curve((exp(-(-log(x))^0.95)), lwd = 2, main = "The Probability Weighting Function",
+      xlab = "p", ylab = "w(p)")
+curve((exp(-(-log(x))^0.85)), add=TRUE, col = "blue", lwd = 2)
+curve((exp(-(-log(x))^0.75)), add=TRUE, col = "red", lwd = 2)
+curve((exp(-(-log(x))^0.65)), add=TRUE, col = "green", lwd = 2)
+curve((exp(-(-log(x))^0.55)), add=TRUE, col = "yellow", lwd = 2)
+curve((exp(-(-log(x))^0.45)), add=TRUE, col = "orange", lwd = 2)
+curve((exp(-(-log(x))^0.35)), add=TRUE, col = "purple", lwd = 2)
+curve((exp(-(-log(x))^0.25)), add=TRUE, col = "pink", lwd = 2)
+curve((exp(-(-log(x))^0.15)), add=TRUE, col = "brown", lwd = 2)
+curve((exp(-(-log(x))^0.05)), add=TRUE, col = "gray", lwd = 2)
+
+
+
